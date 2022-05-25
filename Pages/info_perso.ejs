@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Info perso</title>
+</head>
+<body>
+
+	<h1>
+		Informations personnelles :
+
+		
+	</h1>
+
+	<style>
+		table, th, td {
+		  border:1px solid black;
+		}
+	</style>
+		
+		
+		<table style="width:50%;">
+			<tr>
+				<th height="50">Nom</th>
+				<th height="50"><%= data[0].nom%></th>
+			</tr>
+			<tr>
+				<th height="50">Prenom</th>
+				<th height="50"><%= data[0].prenom%></th>
+			</tr>
+            <tr>
+				<th height="50">Adresse mail</th>
+				<th height="50"><%= data[0].adr_mail%></th>
+			</tr>
+            <tr>
+				<th height="50">Pays</th>
+				<th height="50"><%= data[0].pays%></th>
+			</tr>
+            <tr>
+				<th height="50">Fidelite</th>
+				<th height="50"><%= data[0].fidelite %></th>
+			</tr>
+            <tr>
+				<th height="50">Mot de passe</th>
+				<th height="50"><%= data[0].mot_de_passe %></th>
+			</tr>
+		</table>
+	
+
+	
+</body>
+</html>

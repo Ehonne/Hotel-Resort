@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Hotel AWS - Detail of the hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css"  href="css/slick.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/initial.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/default.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script  src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script  src="js/html5shiv.min.js"></script>
+    <script  src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFC5925"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page_loader"></div>
+
+<!-- Option Panel -->
+<div class="option-panel option-panel-collased">
+    <h2>Change Color</h2>
+    <div class="color-plate sandybrown-plate" data-color="sandybrown"></div>
+    <div class="color-plate blue-light-2-plate" data-color="blue-light-2"></div>
+    <div class="color-plate yellow-plate" data-color="yellow"></div>
+    <div class="color-plate red-plate" data-color="red"></div>
+    <div class="color-plate green-light-plate" data-color="green-light"></div>
+    <div class="color-plate purple-plate" data-color="purple"></div>
+    <div class="color-plate blue-plate" data-color="blue"></div>
+    <div class="color-plate peru-plate" data-color="peru"></div>
+    <div class="color-plate green-plate" data-color="green"></div>
+    <div class="color-plate blue-light-plate" data-color="blue-light"></div>
+    <div class="color-plate green-light-2-plate" data-color="green-light-2"></div>
+    <div class="color-plate royalblue-plate" data-color="royalblue"></div>
+    <div class="setting-button">
+        <i class="fa fa-gear"></i>
+    </div>
+</div>
+<!-- /Option Panel -->
+
+
+
+<!-- Main header start -->
+<header class="main-header" id="main-header-2">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand-logos" href="index.html">
+                <img src="img/logos/logo.png" alt="logo" class="logo-photo" height="100">
+               <!-- <img src="img/logos/white-logo.png" alt="logo" class="logo-photo2" height="100"> -->
+            </a>
+            <button class="navbar-toggler" id="drawer" type="button">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="rooms-col-1.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Stays
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="about.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our company
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="faq.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="contact.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact us
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="header-search animated fadeInDown">
+                <form class="form-inline">
+                    <input type="text" class="form-control" id="searchKey" placeholder="Search...">
+                    <div class="search-btns">
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main header end -->
+
+
+
+<!-- Sidenav start -->
+<nav id="sidebar" class="nav-sidebar sidebar-heading-section">
+    <!-- Close btn-->
+    <div id="dismiss">
+        <i class="fa fa-close"></i>
+    </div>
+    <div class="sidebar-inner">
+        <div class="sidebar-logo">
+            <img src="img/logos/logo.png" alt="sidebarlogo" height="100" width="100">
+        </div>
+        <div class="sidebar-navigation">
+            <h3 class="heading">Menu</h3>
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html"><i class="fa fa-home"></i>   Home</a>
+                </li>
+                <li>
+                    <a href="rooms-col-1.html"><i class="fa flaticon-bed"></i>   Stays</a>
+                </li>
+                <li>
+                    <a href="about.html"><i class="fa fa-building-o"></i>   Our company</a>
+                </li>
+                <li><a href="#"><i class="fa fa-info"></i>   Help<em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Sidenav end -->
+
+
+<!-- Rooms banner start -->
+<div class="rooms-banner">
+    <div class="container-fluid">
+        <div class="featured-slider row slide-box-btn slider" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+            <div class="slide slide-box">
+                <div class="banner-img">
+                    <img src="img/room/img-1.jpg" alt="banner" class="img-fluid bp">
+                </div>
+            </div>
+            <div class="slide slide-box">
+                <div class="banner-img">
+                    <img src="img/room/img-2.jpg" alt="banner" class="img-fluid bp">
+                </div>
+            </div>
+            <div class="slide slide-box">
+                <div class="banner-img">
+                    <img src="img/room/img-3.jpg" alt="banner" class="img-fluid bp">
+                </div>
+            </div>
+            <div class="slide slide-box">
+                <div class="banner-img">
+                    <img src="img/room/img-4.jpg" alt="banner" class="img-fluid bp">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Rooms banner end -->
+
+<!-- room info heading start -->
+<div class="room-info-heading">
+    <div class="container">
+        <div class="room-info-heading-inner">
+            <div class="row g-0">
+                <div class="col-xl-3 col-lg-4 col-md-4">
+                    <div class="photo">
+                        <div class="home">
+                            <img class="img-fluid" src="img/room-info.jpeg" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-8 align-self-center">
+                    <div class="content">
+                        <div class="for-sale">Available</div>
+                        <h2><a href="#">Hotel Hilton</a> <span class="pull-right">€299,00</span></h2>
+                        <span class="pull-right">
+                            <div class="form-group mb-0">
+                                <a class="w-100 btn-theme btn-4 btn-7" href="booking-system.html">Book</a>
+                            </div>
+                        </span>
+                        <ul class="facilities-list clearfix">
+                            <li>
+                                <i class="flaticon-bed"></i> Beds
+                            </li>
+                            <li>
+                                <i class="flaticon-air-conditioning"></i>
+                                AC
+                            </li>
+                            <li>
+                                <i class="flaticon-graph-line-screen"></i>
+                                TV
+                            </li>
+                            <li>
+                                <i class="flaticon-weightlifting"></i>
+                                GYM
+                            </li>
+                            <li>
+                                <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                Wi-fi
+                            </li>
+                            <li>
+                                <i class="flaticon-parking"></i>
+                                Parking
+                            </li>
+                        </ul>
+
+                        <p><i class="fa fa-map-marker"></i> Paris</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- room info heading end -->
+
+<!-- Rooms details page start -->
+<div class="content-area-17 rooms-details-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <!-- Rooms details section start -->
+                <div class="rooms-detail-slider ">
+
+                    <!-- Rooms description start -->
+                    <div class="rooms-description mb-50">
+                        <!-- Title -->
+                        <h3>Description</h3>
+                        <!-- paragraph -->
+                        <p class="mb-0">This hotel is situated in the heart of the city. It offers a bar and air-conditioned rooms with free Wi-Fi. Guest rooms are simply furnished and equipped with a flat-screen TV with satellite channels and a minibar. The suite bathrooms feature a hairdryer and complimentary toiletries. This hotel serves a buffet breakfast each morning in the dining room, or guests can enjoy a continental breakfast in their room upon request. In the evening, guests are invited to enjoy a drink in the hotel’s bar. The reception desk is open 24 hours a day. Additional services available include a dry-cleaning service and a tour desk. Railway station is just a 3-minute walk away and provides direct access to the airport. Couples particularly like the location.</p>
+                    </div>
+                    <!-- Rooms description end -->
+
+                    <!-- Amenities start -->
+                    <div class="amenities mb-30">
+                        <h3>Facilities</h3>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <ul class="condition">
+                                    <li>
+                                        <i class="flaticon-air-conditioning"></i>Air conditioning
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-balcony-and-door"></i>Balcony
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-weightlifting"></i>Gym
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-parking"></i>Parking
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-sunbed"></i>Beach View
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <ul class="condition">
+                                    <li>
+                                        <i class="flaticon-bed"></i>2 Bedroom
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-person-learning-by-reading"></i>Free Newspaper
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-swimming-silhouette"></i>Use of pool
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-graph-line-screen"></i>TV
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-no-smoking-sign"></i>No Smoking
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <ul class="condition">
+                                    <li>
+                                        <i class="flaticon-room-service"></i>Room Service
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-breakfast"></i>Breakfast
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-phone-receiver"></i>Telephone
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-bed"></i>2 Bedroom
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-wifi-connection-signal-symbol"></i>Free Wi-Fi
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Amenities end -->
+
+                    <!-- Extra service start  -->
+                    <div class="extra-service mb-50">
+                        <h3>Extra Service</h3>
+                        <div class="extra-service-item">
+                            <p class="tag-item-name">Air Conditioner </p>
+                            <div class="border-centar"></div>
+                            <div class="label-items-value"><span class="price">+24€</span>to price per person </div>
+                        </div>
+                        <div class="extra-service-item">
+                            <p class="tag-item-name">Free Internet </p>
+                            <div class="border-centar"></div>
+                            <div class="label-items-value"><span class="price">+14€</span>to price per person </div>
+                        </div>
+                        <div class="extra-service-item">
+                            <p class="tag-item-name">LCD Television </p>
+                            <div class="border-centar"></div>
+                            <div class="label-items-value"><span class="price">+15€</span>to price per person </div>
+                        </div>
+                        <div class="extra-service-item">
+                            <p class="tag-item-name">Microwave </p>
+                            <div class="border-centar"></div>
+                            <div class="label-items-value"><span class="price">+30€</span>to price per person </div>
+                        </div>
+                    </div>
+                    <!-- Extra service end -->
+
+                    <!-- Cancellation start  -->
+                    <div class="cancellation mb-50">
+                        <h3>Cancellation</h3>
+                        <p>Cancellation and prepayment policies vary according to accommodation type.</p>
+                    </div>
+                    <!-- Cancellation end -->
+
+
+                    <!-- Available Rooms -->
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3 class="booking-heading-2">Available Rooms</h3>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="hotel-box">
+                                    <!-- Photo thumbnail -->
+                                    <div class="photo-thumbnail">
+                                        <div class="photo">
+                                            <img src="img/room/img-1.jpg" alt="photo" class="img-fluid w-100">
+                                            <a href="booking-system.html">
+                                                <span class="blog-one__plus"></span>
+                                            </a>
+                                        </div>
+                                        <div class="pr">
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-full"></i>
+                                            </div>
+                                            $567.99/Night
+                                        </div>
+                                    </div>
+                                    <!-- Detail -->
+                                    <div class="detail clearfix">
+                                        <h3>
+                                            <a href="booking-system.html">Luxury Room</a>
+                                        </h3>
+                                        <p class="location">
+                                            <a href="rooms-details.html">
+                                                <i class="fa fa-map-marker"></i>Paris,
+                                            </a>
+                                        </p>
+                                        <div class="fecilities">
+                                            <ul>
+                                                <li>
+                                                    <i class="flaticon-bed"></i> Beds
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-air-conditioning"></i>
+                                                    AC
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-graph-line-screen"></i>
+                                                    TV
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-weightlifting"></i>
+                                                    GYM
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                                    Wi-fi
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-parking"></i>
+                                                    Parking
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel-box">
+                                    <!-- Photo thumbnail -->
+                                    <div class="photo-thumbnail">
+                                        <div class="photo">
+                                            <img src="img/room/img-2.jpg" alt="phot" class="img-fluid w-100">
+                                            <a href="booking-system.html">
+                                                <span class="blog-one__plus"></span>
+                                            </a>
+                                        </div>
+                                        <div class="pr">
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-full"></i>
+                                            </div>
+                                            $567.99/Night
+                                        </div>
+                                    </div>
+                                    <!-- Detail -->
+                                    <div class="detail clearfix">
+                                        <h3>
+                                            <a href="booking-system.html">Double Room</a>
+                                        </h3>
+                                        <p class="location">
+                                            <a href="rooms-details.html">
+                                                <i class="fa fa-map-marker"></i>Paris,
+                                            </a>
+                                        </p>
+                                        <div class="fecilities">
+                                            <ul>
+                                                <li>
+                                                    <i class="flaticon-bed"></i> Beds
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-air-conditioning"></i>
+                                                    AC
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-graph-line-screen"></i>
+                                                    TV
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-weightlifting"></i>
+                                                    GYM
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                                    Wi-fi
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-parking"></i>
+                                                    Parking
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="hotel-box">
+                                    <!-- Photo thumbnail -->
+                                    <div class="photo-thumbnail">
+                                        <div class="photo">
+                                            <img src="img/room/img-4.jpg" alt="photo" class="img-fluid w-100">
+                                            <a href="booking-system.html">
+                                                <span class="blog-one__plus"></span>
+                                            </a>
+                                        </div>
+                                        <div class="pr">
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-full"></i>
+                                            </div>
+                                            $567.99/Night
+                                        </div>
+                                    </div>
+                                    <!-- Detail -->
+                                    <div class="detail clearfix">
+                                        <h3>
+                                            <a href="booking-system.html">Single Room</a>
+                                        </h3>
+                                        <p class="location">
+                                            <a href="booking-system.html">
+                                                <i class="fa fa-map-marker"></i>Paris,
+                                            </a>
+                                        </p>
+                                        <div class="fecilities">
+                                            <ul>
+                                                <li>
+                                                    <i class="flaticon-bed"></i> Beds
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-air-conditioning"></i>
+                                                    AC
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-graph-line-screen"></i>
+                                                    TV
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-weightlifting"></i>
+                                                    GYM
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                                    Wi-fi
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-parking"></i>
+                                                    Parking
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel-box">
+                                    <!-- Photo thumbnail -->
+                                    <div class="photo-thumbnail">
+                                        <div class="photo">
+                                            <img src="img/room/img-3.jpg" alt="photo" class="img-fluid w-100">
+                                            <a href="booking-system.html">
+                                                <span class="blog-one__plus"></span>
+                                            </a>
+                                        </div>
+                                        <div class="pr">
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-full"></i>
+                                            </div>
+                                            $567.99/Night
+                                        </div>
+                                    </div>
+                                    <!-- Detail -->
+                                    <div class="detail clearfix">
+                                        <h3>
+                                            <a href="booking-system.html">Double Room</a>
+                                        </h3>
+                                        <p class="location">
+                                            <a href="rooms-details.html">
+                                                <i class="fa fa-map-marker"></i>Paris,
+                                            </a>
+                                        </p>
+                                        <div class="fecilities">
+                                            <ul>
+                                                <li>
+                                                    <i class="flaticon-bed"></i> Beds
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-air-conditioning"></i>
+                                                    AC
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-graph-line-screen"></i>
+                                                    TV
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-weightlifting"></i>
+                                                    GYM
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                                    Wi-fi
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-parking"></i>
+                                                    Parking
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comments section start -->
+                    <div class="comments-section">
+                        <!-- Main Title 2 -->
+                        <div class="main-title-2">
+                            <h1>Guest Reviews</h1>
+                        </div>
+
+                        <ul class="comments mb-50">
+                            <li>
+                                <div class="comment">
+                                    <div class="comment-author">
+                                        <a href="#">
+                                            <img src="img/avatar/avatar-1.png" alt="avatar">
+                                        </a>
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-meta">
+                                            <div class="comment-meta-author">
+                                                Yasser Drif
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="comment-body">
+                                            <div class="comment-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <p>A really stunning hotel in a great location with lovely staff and facilities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="comment">
+                                            <div class="comment-author">
+                                                <a href="#">
+                                                    <img src="img/avatar/avatar-2.png" alt="avatar">
+                                                </a>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="comment-meta">
+                                                    <div class="comment-meta-author">
+                                                        Thiva
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="comment-body">
+                                                    <div class="comment-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-half-o"></i>
+                                                    </div>
+                                                    <p>We were on our honeymoon and the Kindly upgraded us to a lovely room. The service was implacable and they left kind attentions every day (champagne, chocolates & bag tags for example). The spa/swimming pool was beautiful and the location great. Hope to visit again for our honeymoon anniversary! Thank you very much front desk & reservation office & staff</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Comments section end -->
+
+                    <!-- Contact 2 start -->
+                    <div class="contact-2 c-mb mb-50">
+                        <div class="main-title-2">
+                            <h1>Leave a Comment</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Contact form start -->
+                                <div class="contact-form">
+                                    <form action="#" method="GET" enctype="multipart/form-data">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group name">
+                                                    <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Full Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group email">
+                                                    <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group subject">
+                                                    <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group number">
+                                                    <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone Number">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="form-group message">
+                                                    <textarea  class="form-control" name="message" placeholder="Write message" aria-label="Write message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="send-btn">
+                                                    <button type="submit" class="btn-md btn-theme btn-4 btn-7">Submit Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Contact form end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact-2 end -->
+
+                   
+            <!--
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                
+                <div class="sidebar">
+                   
+                    <div class="location sidebar-widget">
+                        <div class="map">
+                           
+                            <div class="main-title-2">
+                                <h1>Location</h1>
+                            </div>
+                            <div id="map" class="contact-map" style="height: 662px;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget search-area-box-3 clearfix">
+                        <h3>Your search</h3>
+                        <div class="search-contents">
+                            <form method="GET">
+                                <div class="search-your-details">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-6">
+                                            <div class="form-group">
+                                                <select class="selectpicker search-fields" name="destination">
+                                                    <option>Destination</option>
+                                                    <option>Paris</option>
+                                                    <option>Bordeaux</option>
+                                                    <option>Marseille</option>
+                                                    <option>Toulouse</option>
+                                                    <option>Lyon</option>
+                                                    <option>Lille</option>
+                                                    <option>Rennes</option>
+                                                    <option>Rouen</option>
+                                                    <option>Strasbourg</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="btn-default datepicker" placeholder="Check In">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="btn-default datepicker" placeholder="Check Out">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <select class="selectpicker search-fields" name="beds">
+                                                    <option>Number of rooms</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <select class="selectpicker search-fields" name="adults">
+                                                    <option>Number of people</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group mb-0">
+                                                <a type="submit" class="btn-md btn-theme btn-4 btn-7 w-100" href="booking-system.html">Search</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="sidebar-widget similar-rooms clearfix">
+                        <div class="main-title-2">
+                            <h1>Similar Rooms</h1>
+                        </div>
+                        <div class="col">
+                            <div class="col-lg-12 col-md-6 col-sm-12">
+                                <div class="hotel-box">
+                                   
+                                    <div class="photo-thumbnail">
+                                        <div class="photo">
+                                            <img src="img/room/img-1.jpg" alt="photo" class="img-fluid w-100">
+                                            <a href="rooms-details.html">
+                                                <span class="blog-one__plus"></span>
+                                            </a>
+                                        </div>
+                                        <div class="pr">
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-full"></i>
+                                            </div>
+                                            €567.99/Night
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="detail clearfix">
+                                        <h3>
+                                            <a href="rooms-details.html">Luxury Room</a>
+                                        </h3>
+                                        <p class="location">
+                                            <a href="rooms-details.html">
+                                                <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
+                                            </a>
+                                        </p>
+                                        <div class="fecilities">
+                                            <ul>
+                                                <li>
+                                                    <i class="flaticon-bed"></i> Beds
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-air-conditioning"></i>
+                                                    AC
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-graph-line-screen"></i>
+                                                    TV
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-weightlifting"></i>
+                                                    GYM
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                                    Wi-fi
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-parking"></i>
+                                                    Parking
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 col-sm-12">
+                                <div class="hotel-box">
+                                  
+                                    <div class="photo-thumbnail">
+                                        <div class="photo">
+                                            <img src="img/room/img-2.jpg" alt="phot" class="img-fluid w-100">
+                                            <a href="rooms-details.html">
+                                                <span class="blog-one__plus"></span>
+                                            </a>
+                                        </div>
+                                        <div class="pr">
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-full"></i>
+                                            </div>
+                                            €567.99/Night
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="detail clearfix">
+                                        <h3>
+                                            <a href="rooms-details.html">Double Room</a>
+                                        </h3>
+                                        <p class="location">
+                                            <a href="rooms-details.html">
+                                                <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
+                                            </a>
+                                        </p>
+                                        <div class="fecilities">
+                                            <ul>
+                                                <li>
+                                                    <i class="flaticon-bed"></i> Beds
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-air-conditioning"></i>
+                                                    AC
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-graph-line-screen"></i>
+                                                    TV
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-weightlifting"></i>
+                                                    GYM
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                                    Wi-fi
+                                                </li>
+                                                <li>
+                                                    <i class="flaticon-parking"></i>
+                                                    Parking
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                Sidebar end 
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- Rooms details page end -->
+
+
+<!-- Footer start -->
+<footer class="main-footer clearfix">
+    <div class="container">
+        <!-- Footer info-->
+        <div class="footer-info">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="footer-item newsletter">
+                        <div class="main-title-2">
+                            <h1>Newsletter</h1>
+                        </div>
+                        <div class="newsletter-inner">
+                            <p>Sign up and we'll send the best deals to you</p>
+                            <form class="form-inline" action="#" method="GET">
+                                <input type="text" class="form-control" id="inlineFormInputName4" placeholder="Your Email">
+                                <button type="submit" class="btn btn-small"><i class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link px-2 text-muted">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link px-2 text-muted">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link px-2 text-muted">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="nav-link px-2 text-muted">My Account</a>
+                    </li>
+                </ul>
+                <div class="col-lg-6 col-md-6">
+                    <p> &copy;  2022 All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="clearfix"></div>
+                    <ul class="social-list">
+                        <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script  src="js/bootstrap-submenu.js"></script>
+<script  src="js/jquery.mb.YTPlayer.js"></script>
+<script  src="js/wow.min.js"></script>
+<script  src="js/bootstrap-select.min.js"></script>
+<script  src="js/jquery.easing.1.3.js"></script>
+<script  src="js/jquery.scrollUp.js"></script>
+<script  src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script  src="js/jquery.filterizr.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script  src="js/slick.min.js"></script>
+<script  src="js/sidebar.js"></script>
+<script  src="js/app.js"></script>
+<script  src="js/dropzone.js"></script>
+<script  src="js/jquery.magnific-popup.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+<!-- Custom javascript -->
+
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4omYJlOaP814WDcCG8eubXcbhB-44Uac"></script>
+<script>
+    function LoadMap(propertes) {
+        var defaultLat = 40.7110411;
+        var defaultLng = -74.0110326;
+        var mapOptions = {
+            center: new google.maps.LatLng(defaultLat, defaultLng),
+            zoom: 15,
+            scrollwheel: false,
+            styles: [
+                {
+                    featureType: "administrative",
+                    elementType: "labels",
+                    stylers: [
+                        {visibility: "off"}
+                    ]
+                },
+                {
+                    featureType: "water",
+                    elementType: "labels",
+                    stylers: [
+                        {visibility: "off"}
+                    ]
+                },
+                {
+                    featureType: 'poi.business',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'labels.icon',
+                    stylers: [{visibility: 'off'}]
+                },
+            ]
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var infoWindow = new google.maps.InfoWindow();
+        var myLatlng = new google.maps.LatLng(40.7110411, -74.0110326);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map
+        });
+        (function (marker) {
+            google.maps.event.addListener(marker, "click", function (e) {
+                infoWindow.setContent("" +
+                    "<div class='map-edu contact-map-content'>" +
+                    "<div class='map-content'>" +
+                    "<p class='address'>123 Kathal St. Tampa City, </p>" +
+                    "<ul class='map-edu-list'> " +
+                    "<li><i class='fa fa-phone'></i>  +0477 85X6 552</li> " +
+                    "<li><i class='fa fa-envelope'></i>  info@themevessel.com</li> " +
+                    "<li><a href='index.html'><i class='fa fa-globe'></i>  http://http://themevessel.com</li></a> " +
+                    "</ul>" +
+                    "</div>" +
+                    "</div>");
+                infoWindow.open(map, marker);
+            });
+        })(marker);
+    }
+    LoadMap();
+</script>
+
+</body>
+</html>

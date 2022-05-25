@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Hotel Resort - Search Hotels 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css"  href="css/slick.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/initial.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/default.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script  src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script  src="js/html5shiv.min.js"></script>
+    <script  src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFC5925"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page_loader"></div>
+
+<!-- Option Panel -->
+<div class="option-panel option-panel-collased">
+    <h2>Change Color</h2>
+    <div class="color-plate sandybrown-plate" data-color="sandybrown"></div>
+    <div class="color-plate blue-light-2-plate" data-color="blue-light-2"></div>
+    <div class="color-plate yellow-plate" data-color="yellow"></div>
+    <div class="color-plate red-plate" data-color="red"></div>
+    <div class="color-plate green-light-plate" data-color="green-light"></div>
+    <div class="color-plate purple-plate" data-color="purple"></div>
+    <div class="color-plate blue-plate" data-color="blue"></div>
+    <div class="color-plate peru-plate" data-color="peru"></div>
+    <div class="color-plate green-plate" data-color="green"></div>
+    <div class="color-plate blue-light-plate" data-color="blue-light"></div>
+    <div class="color-plate green-light-2-plate" data-color="green-light-2"></div>
+    <div class="color-plate royalblue-plate" data-color="royalblue"></div>
+    <div class="setting-button">
+        <i class="fa fa-gear"></i>
+    </div>
+</div>
+<!-- /Option Panel -->
+
+<!-- Top header start 
+<header class="top-header" id="top-header-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-7 col-7">
+                <div class="list-inline">
+                    <a href="tel:+Xx-XXxXXXx"><i class="fa fa-phone"></i>Need Support? +Xx-XXxXXXx</a>
+                    <a href="tel:contact@website.com" class="d-none-768"><i class="fa fa-envelope"></i>contact@website.com</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-5 col-5">
+                <ul class="top-social-media pull-right">
+                    <li>
+                        <a href="booking-system.html" class="sign-in"><i class="fa fa-sign-in"></i> Booking system</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+ Top header end 
+
+Main header start
+<header class="main-header" id="main-header-1">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logos" href="index.html">
+                <img src="img/logos/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" id="drawer" type="button">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link " href="rooms-col-1.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Rooms
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="contact.html" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+
+                    </li>
+                    <li class="nav-item sp">
+                        <a id="header-search-btn" class="nav-link link-color"><i class="fa fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="header-search animated fadeInDown">
+                <form class="form-inline">
+                    <input type="text" class="form-control" id="searchKey" placeholder="Search...">
+                    <div class="search-btns">
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+ Main header end 
+
+ Sidenav start 
+<nav id="sidebar" class="nav-sidebar sidebar-heading-section">
+     Close btn
+    <div id="dismiss">
+        <i class="fa fa-close"></i>
+    </div>
+    <div class="sidebar-inner">
+        <div class="sidebar-logo">
+            <img src="img/logos/logo.png" alt="sidebarlogo">
+        </div>
+        <div class="sidebar-navigation">
+            <h3 class="heading">Pages</h3>
+            <ul class="menu-list">
+                <li><a href="#" class="pt0">Index <em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li><a href="index.html">Index 1</a></li>
+                        <li><a href="index-2.html">Index 2</a></li>
+                        <li><a href="index-3.html">Index 3</a></li>
+                        <li><a href="index-4.html">Index 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="active">Rooms <em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li><a href="rooms-col-1.html">1 Column</a></li>
+                        <li><a href="rooms-col-2.html">2 Column</a></li>
+                        <li><a href="rooms-col-3.html">3 Column</a></li>
+                        <li><a href="rooms-details.html">Rooms Details</a></li>
+                        <li><a href="rooms-details.html">Rooms Details 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pages <em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li>
+                            <a href="#">About Us<em class="fa fa-chevron-down"></em></a>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about-2.html">About Us 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Gallery<em class="fa fa-chevron-down"></em></a>
+                            <ul>
+                                <li><a href="gallery-3column.html">Gallery 3 Column</a></li>
+                                <li><a href="gallery-4column.html">Gallery 4 Column</a></li>
+                                <li><a href="gallery-masonry.html">Gallery Masonry</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="booking-system.html">Booking System</a></li>
+                        <li>
+                            <a href="#">Staff <em class="fa fa-chevron-down"></em></a>
+                            <ul>
+                                <li><a href="staff.html">Staff</a></li>
+                                <li><a href="staff-2.html">Staff 2</a></li>
+                                <li><a href="staff-3.html">Staff 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Events <em class="fa fa-chevron-down"></em></a>
+                            <ul>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="events-right-sidebar.html">Events Right Sidebar</a></li>
+                                <li><a href="events-details.html">Events Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing-tables.html">Pricing Tables</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="forgot-password.html">Forgot Password</a></li>
+                        <li><a href="404.html">404 Error</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact <em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact-2.html">Contact 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog <em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                        <li><a href="blog-full-width.html">Blog Fullwidth</a></li>
+                        <li><a href="blog-creative.html">Blog Creative</a></li>
+                        <li><a href="blog-details.html">Blog Detail</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="get-in-touch">
+            <h3 class="heading">Get in Touch</h3>
+            <div class="sidebar-contact-info">
+                <div class="icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="body-info">
+                    <a href="tel:0477-0477-8556-552">0477 8556 552</a>
+                </div>
+            </div>
+            <div class="sidebar-contact-info">
+                <div class="icon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="body-info">
+                    <a href="#">info@themevessel.com</a>
+                </div>
+            </div>
+            <div class="sidebar-contact-info mb-0">
+                <div class="icon">
+                    <i class="fa fa-fax"></i>
+                </div>
+                <div class="body-info">
+                    <a href="tel:0477-0477-8556-552">0266 8556 787</a>
+                </div>
+            </div>
+        </div>
+        <div class="get-social">
+            <h3 class="heading">Get Social</h3>
+            <a href="#" class="facebook-bg">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="twitter-bg">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="google-bg">
+                <i class="fa fa-google"></i>
+            </a>
+            <a href="#" class="linkedin-bg">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+Sidenav end -->
+
+
+
+<!-- Main header start -->
+<header class="main-header" id="main-header-2">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand-logos" href="index.html">
+                <img src="img/logos/logo.png" alt="logo" class="logo-photo" height="100">
+               <!-- <img src="img/logos/white-logo.png" alt="logo" class="logo-photo2" height="100"> -->
+            </a>
+            <button class="navbar-toggler" id="drawer" type="button">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="stays" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Stays
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="about.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our company
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                            <a class="dropdown-item" href="contact.html">Contact us</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="header-search animated fadeInDown">
+                <form class="form-inline">
+                    <input type="text" class="form-control" id="searchKey" placeholder="Search...">
+                    <div class="search-btns">
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main header end -->
+
+
+
+<!-- Sidenav start -->
+<nav id="sidebar" class="nav-sidebar sidebar-heading-section">
+    <!-- Close btn-->
+    <div id="dismiss">
+        <i class="fa fa-close"></i>
+    </div>
+    <div class="sidebar-inner">
+        <div class="sidebar-logo">
+            <img src="img/logos/logo.png" alt="sidebarlogo" height="100" width="100">
+        </div>
+        <div class="sidebar-navigation">
+            <h3 class="heading">Menu</h3>
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html"><i class="fa fa-home"></i>   Home</a>
+                </li>
+                <li>
+                    <a href="stays"><i class="fa flaticon-bed"></i>   Stays</a>
+                </li>
+                <li>
+                    <a href="about.html"><i class="fa fa-building-o"></i>   Our company</a>
+                </li>
+                <li><a href="#"><i class="fa fa-info"></i>   Help<em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="login.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-sign-in"></em> Sign In </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="signup.html" class="btn-lg btn-4 btn-6"> <em class="fa fa-user-plus"></em> Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Sidenav end -->
+
+<!-- Sub banner start -->
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Search Hotels</h1>
+        </div>
+        <nav class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Search Hotels</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!-- Rooms section start -->
+<div class="rooms-section content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                <% if(data.length == 0) { %>
+                    <h1>No hotel corresponding to your search.</h1>
+                <% } %>
+                <% for (var i = 0; i < data.length; i++) { %>
+                <div class="row hotel-box-list-2 hbl-2 g-0">
+                    <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12">
+                        <div class="photo-thumbnail">
+                            <div class="photo">
+                                <img src="img/room/hotel<%=i+1%>.png" alt="photo" class="img-fluid w-100">
+                                <a href="room?id=<%=data[i][0].ID_HOTEL%>&date_deb=<%=date_deb%>&date_fin=<%=date_fin%>&i=<%=i+1%>">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12">
+                        <div class="detail">
+                            <div class="heading clearfix">
+                                <h3 class="title">
+                                    <a href="room?id=<%=data[i][0].ID_HOTEL%>&date_deb=<%=date_deb%>&date_fin=<%=date_fin%>&i=<%=i+1%>"><%= data[i][0].nom%></a>
+                                    <span class="price">€ <%= data[i][0].prix%></span>
+                                </h3>
+                            </div>
+                            <p><i class="fa fa-map-marker"></i> <%= data[i][0].ville%> </p>
+                            <p> Located in the heart of <%= data[i][0].ville%>, this hotel has an excellent rating for its geographical location. Dreaming of a good night's sleep? This hotel got high marks for very comfortable beds. </p>
+                            <ul class="fecilities clearfix">
+                                <li>
+                                    <i class="flaticon-room-service"></i>
+                                    Room Service
+                                </li>
+                                <li>
+                                    <i class="flaticon-parking"></i>
+                                    Parking
+                                </li>
+                                <li>
+                                    <i class="flaticon-breakfast"></i>
+                                    Breakfast
+                                </li>
+                                <li>
+                                    <i class="flaticon-air-conditioning"></i>
+                                    AC
+                                </li>
+                                <li>
+                                    <i class="flaticon-graph-line-screen"></i>
+                                    TV
+                                </li>
+                                <li>
+                                    <i class="flaticon-weightlifting"></i>
+                                    GYM
+                                </li>
+                                <li>
+                                    <i class="flaticon-phone-receiver"></i>
+                                    Telephone
+                                </li>
+                                <li>
+                                    <i class="flaticon-wifi-connection-signal-symbol"></i>
+                                    Wi-fi
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Rooms  section end -->
+
+
+<!-- Footer start -->
+<footer class="main-footer clearfix">
+    <div class="container">
+        <!-- Footer info-->
+        <div class="footer-info">
+            <div class="row">
+                <!--
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="footer-item">
+                        <div class="main-title-2">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <ul class="personal-info">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                Address: 45 Av. des États Unis, 78000 Versailles
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                Email:<a href="mailto:contact@website.com">contact@website.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                Phone: <a href="tel:+Xx-XXxXXXx">+Xx-XXxXXXx</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-fax"></i>
+                                Fax: +Xx-XXxXXXx
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            -->
+
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <div class="footer-item newsletter">
+                        <div class="main-title-2">
+                            <h1>Newsletter</h1>
+                        </div>
+                        <div class="newsletter-inner">
+                            <p>Sign up and we'll send the best deals to you</p>
+                            <form class="form-inline" action="#" method="GET">
+                                <input type="text" class="form-control" id="inlineFormInputName4" placeholder="Your Email">
+                                <button type="submit" class="btn btn-small"><i class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link px-2 text-muted">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link px-2 text-muted">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link px-2 text-muted">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="nav-link px-2 text-muted">My Account</a>
+                    </li>
+                </ul>
+                <div class="col-lg-6 col-md-6">
+                    <p> &copy;  2022 All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="clearfix"></div>
+                    <ul class="social-list">
+                        <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script  src="js/bootstrap-submenu.js"></script>
+<script  src="js/jquery.mb.YTPlayer.js"></script>
+<script  src="js/wow.min.js"></script>
+<script  src="js/bootstrap-select.min.js"></script>
+<script  src="js/jquery.easing.1.3.js"></script>
+<script  src="js/jquery.scrollUp.js"></script>
+<script  src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script  src="js/jquery.filterizr.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script  src="js/slick.min.js"></script>
+<script  src="js/sidebar.js"></script>
+<script  src="js/app.js"></script>
+<script  src="js/dropzone.js"></script>
+<script  src="js/jquery.magnific-popup.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+<!-- Custom javascript -->
+
+</body>
+</html>

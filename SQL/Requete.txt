@@ -1,0 +1,75 @@
+# Requetes
+
+## Info Personnel: Recupere les informations lié a un client
+
+select c.nom, c.prenom, c.N_tel, c.pays, c.adr_mail, c.mot_de_passe
+from client c 
+where c.ID_CLIENT = 5
+
+## Point de fidelité: Recuperer les points de fidelité du client
+select c.fidelite
+from client c 
+where c.ID_CLIENT = 5
+
+## Historique de réservation: Recuperation de l'historique des réservations (ensemble des occurence pour un ID_client de la table Réservation)
+
+select r.ID_RES
+from reservation r 
+where r.id_client = 35
+
+## Login: Verification si l'adresse-mail d'un client correspond au bon mpd du meme client
+
+select c.mot_de_passe 
+from client c
+where c.ID_CLIENT = 35  
+
+## S'enregistrer: Creation d'un clients avec nom Prenom mail mpd
+
+insert into client value(183, 'Micheal', 'John', '07 89 25 36 14', 'MJ@gmail.com', 'France', "edadseas", 10)
+
+## Actualisation des données: Update d'un client nom prenom mail mpd adresse
+
+update client set nom = "NewNom", adr_mail = "Newmail@gmail.com", mot_de_passe = "newmpd" where ID_CLIENT = 4
+
+## Recherche: Pour chaque hotel le renvoyé si il est dans la ville saisie et qu'il a au moins n chambres disponible durant les dates saisies.
+/*Pour pour une ville donné renvoi les hotels qui ont au moins 20 chambres qui sont libres du 26 au 31*/
+
+select room.ID_HOTEL , count(*) as "nombre_de_chambres_libres"
+from
+((select c.ID_CHAMBRE, h2.ID_HOTEL
+from chambre c, reservation r, concerner c2, hotel h2 
+where (h2.ville = "Paris" and r.id_hotel = h2.ID_HOTEL and r.ID_RES = c2.id_res and
+	c2.id_chambre = c.ID_CHAMBRE and 
+	"2022-07-26" not between r.date_deb  and r.date_fin and 
+	"2022-07-31" not between r.date_deb  and r.date_fin))
+union 
+(select c.ID_CHAMBRE, h.ID_HOTEL 
+from chambre c, hotel h 
+where h.ville = "Paris" and c.id_hotel = h.ID_HOTEL and c.ID_CHAMBRE not in (select c2.id_chambre
+from concerner c2))
+) as room 
+group by room.ID_HOTEL
+having count(*) > 20;
+
+## Recherche Voir disponibilité: Pour un hotel spécifique, recuperer l'ensemble des chambres disponibles durant les dates saisies
+
+select c.ID_CHAMBRE, c.nb_lits 
+from chambre c, concerner c2, reservation r 
+where r.id_hotel = 6 and r.ID_RES = c2.id_res and 
+	c2.id_chambre = c.ID_CHAMBRE and 
+	"2022-07-26" not between r.date_deb  and r.date_fin and 
+	"2022-07-31" not between r.date_deb  and r.date_fin
+union 
+select c.ID_CHAMBRE, c.nb_lits 
+from chambre c 
+where c.id_hotel = 6 and c.ID_CHAMBRE not in (select c2.id_chambre
+from concerner c2)
+
+## Confirmation: Update chambre plus disponible donc ajout d'une instance de la table, historique des reservations du clients 
+/* prealable recuperation de l'id de la derniere reservation effectuer */
+SELECT r.ID_RES FROM reservation r
+ORDER BY r.ID_RES  DESC
+LIMIT 1;
+
+insert into reservation values (86,1,60,"2022-08-04","2022-08-29");
+insert into concerner values (86,15);
